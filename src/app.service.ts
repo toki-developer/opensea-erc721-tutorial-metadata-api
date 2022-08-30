@@ -17,7 +17,7 @@ export class AppService {
       };
     }
     const image = [1, 2, 3, 4].includes(Number(id))
-      ? `${HOST}/images/creature/${id}`
+      ? `${HOST}/images/creature/creature${id}.jpg`
       : `${HOST}/images/noimage.jpg`;
     return { name: creature.name, image };
   }
